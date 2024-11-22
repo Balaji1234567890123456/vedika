@@ -1,0 +1,40 @@
+POST http://localhost:3003/customer/register
+Content-Type:application/json
+
+{
+    "fullName":"kranthi",
+    "email":"kamla123@gmail.com",
+    "phoneNumber":"536216776",
+    "password":"kranthi"
+}
+
+###
+http://localhost:3003/venue/register
+POST http://localhost:3003/venue/register
+Content-Type:multipart/form-data
+
+{
+    "venueName": "Luxury Conference Center",
+    "phoneNumber": "9876543210",
+    "venueState": "New York",
+    "city": "New York City",
+    "email": "contact@luxvenue.com",
+    "password": "strongpassword",
+    "services": "Catering, Parking, Wi-Fi",
+    "budgetType": "Luxury",
+    "servicesPrice": 8000,
+    
+    "venueReview": "Outstanding venue with top-notch facilities",
+
+    "venueMap": "POINT(40.712776 -74.005974)",
+    "airConditioned": true,
+    "roomsAvailable": 15,
+    "rating": 4.8,
+    "description": "A high-end conference center for corporate events.",
+    "price": 50000,
+    "venueType": "Conference Hall"
+
+}
+##
+
+POST http://localhost:3003/venue/details    
